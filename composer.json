@@ -1,0 +1,12 @@
+{
+    "name": "santore/twig-example",
+    "require": {
+        "twig/twig": "^2.5"
+    },
+    "authors": [
+        {
+            "name": "Brett Santore",
+            "email": "brett.santore@gmail.com"
+        }
+    ]
+}

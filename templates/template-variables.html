@@ -1,0 +1,24 @@
+{% extends "layouts/full-width.html" %}
+
+{% block content %}
+
+	<h1>Pets owned by {{ person }}</h1>
+	
+	<ul>
+	    {% for pet in pets %}
+	        <li>{{ pet }}</li>
+	    {% endfor %}
+	</ul>
+
+	<h1>Fears</h1>
+	{% if fears|length > 0 %}
+		<ul>
+		{% for fear in fears %}
+			<li>fear</li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p>There are no fears</p>
+	{% endif %}
+
+{% endblock %}
