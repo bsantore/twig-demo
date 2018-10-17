@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title></title>
+
+  
+</head>
+<body>
+	<h1>Pets owned by {{ vm.person }}</h1>
+	
+    {% for pet in vm.pets %}
+        <li>{{ pet }}</li>
+    {% endfor %}
+	
+	<h1>Fears</h1>
+	
+	{% if vm.fears|length > 0 %}
+		<ul>
+		{% for fear in vm.fears %}
+			<li>{{ fear}}</li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p>There are no fears</p>
+	{% endif %}
+  
+</body>
+</html>
